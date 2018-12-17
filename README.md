@@ -12,8 +12,9 @@ Follow these steps to setup a local environment on your machine
 1. Download Play! 1 from [here](https://downloads.typesafe.com/play/1.4.4/play-1.4.4.zip)
 2. Unzip previous file
 3. Add `play` to your PATH environment variable
-4. Execute `play run`
-5. Visit `http://localhost:9000`
+4. Clone this repository
+5. Execute `play run`
+6. Visit `http://localhost:9000`
 
 
 ### IDE Integration:
