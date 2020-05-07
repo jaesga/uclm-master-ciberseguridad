@@ -14,7 +14,7 @@ Follow these steps to setup a local environment on your machine
 3. Add `play` to your PATH environment variable
 4. Clone this repository
 5. Execute `play run`
-6. Visit `http://localhost:9000` in your browser.
+6. Visit `http://localhost:9000` in your browser...
 
 
 ### IDE Integration:
