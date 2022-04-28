@@ -16,7 +16,6 @@ Follow these steps to setup a local environment on your machine
 5. Execute `play run`
 6. Visit `http://localhost:9000` in browser.
 
-
 ### IDE Integration:
 
 In order to integrate application with an IDE you can run one of the following commands accordingly:
