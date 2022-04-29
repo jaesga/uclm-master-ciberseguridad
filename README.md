@@ -1,6 +1,6 @@
 ## Running website  
 
-#### Requirements:
+#### SW Requirements:
 
 - Python 2.7
 - Java (JDK 1.8)
