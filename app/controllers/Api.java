@@ -9,6 +9,7 @@ public class Api extends Controller {
 
     public static void removeAllUsers(){
         User.removeAll();
+        asdfasdfsdf
         renderJSON(new JsonObject());
     }
 }
