@@ -23,6 +23,7 @@ In order to integrate application with an IDE you can run one of the following c
 
 IntelliJ: `play idea`
 Eclipse: `play eclipsify`
+...
 
 More info [here](https://www.playframework.com/documentation/1.4.x/ide)
 
