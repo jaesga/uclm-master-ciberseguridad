@@ -21,8 +21,8 @@ Follow these steps to setup a local environment on your machine
 
 In order to integrate application with an IDE you can run one of the following commands accordingly:
 
-Eclipse: `play eclipsify`
 IntelliJ: `play idea`
+Eclipse: `play eclipsify`
 
 More info [here](https://www.playframework.com/documentation/1.4.x/ide)
 
