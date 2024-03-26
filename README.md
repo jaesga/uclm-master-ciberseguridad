@@ -3,8 +3,8 @@
 
 #### Requirements:
 
-- Python 2.7
-- Java (JDK 1.8)
+- Python 3.10.14
+- Java 17
 
 #### Steps:
 
