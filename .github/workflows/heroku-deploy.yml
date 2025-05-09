@@ -3,7 +3,7 @@ name: Despliegue en Heroku
 on:
   push:
     branches:
-      - main # O la rama que uses como principal
+      - master
 
 jobs:
   deploy:
