@@ -7,28 +7,28 @@ on:
 
 jobs:
   dependency-check:
-    name: Ejecutar OWASP Dependency Check
+    name: OWASP Dependency Check
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout del código
+      - name: Code checkout
         uses: actions/checkout@v4
 
-      - name: Configurar Java (si tu proyecto usa Java)
+      - name: Setup Java
         if: ${{ contains(github.event.pull_request.head.repo.language, 'Java') }}
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '17' # O la versión que uses
+          java-version: '17'
 
-      - name: Ejecutar OWASP Dependency Check
+      - name: Run OWASP Dependency Check
         uses: owasp/dependency-check-action@v4
         with:
           project: '${{ github.event.pull_request.head.repo.name }}'
-          scan_type: 'All' # Puedes ajustar esto a 'Jar', 'Maven', 'Gradle', etc. según tu proyecto
+          scan_type: 'All'
           report_format: 'HTML,JSON'
-          fail_on_severity: 'HIGH' # O el nivel de severidad que desees para fallar la acción
+          fail_on_severity: 'HIGH' 
 
-      - name: Subir informe como artefacto
+      - name: Upload report
         uses: actions/upload-artifact@v4
         with:
           name: dependency-check-report
