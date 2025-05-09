@@ -21,15 +21,18 @@ jobs:
           java-version: '17'
 
       - name: Run OWASP Dependency Check
-        uses: owasp/dependency-check-action@v4
+        uses: dependency-check/Dependency-Check_Action@main
         with:
           project: '${{ github.event.pull_request.head.repo.name }}'
-          scan_type: 'All'
-          report_format: 'HTML,JSON'
-          fail_on_severity: 'HIGH' 
+          path: '.'
+          format: 'HTML,JSON'
+          out: 'reports'
+          args: >
+            --failOnCVSS 7
+            --enableRetired 
 
       - name: Upload report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@master
         with:
           name: dependency-check-report
           path: dependency-check-report
